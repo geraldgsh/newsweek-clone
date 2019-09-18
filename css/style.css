@@ -116,7 +116,7 @@ figure {
   height: 95px;
   padding: 20px 10px 15px;
   position: relative;
-  z-index: 2;  
+  z-index: 2;
 }
 
 .date {
@@ -124,7 +124,6 @@ figure {
   border: 1px black solid;
   color: white;
   display: flex;
-  
 }
 
 .subscribe {
@@ -134,23 +133,31 @@ figure {
   justify-content: flex-end;
 }
 
-.sign-in {
+.sign-in > a {
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bolder;
   padding-left: 20px;
   padding-right: 20px;
+  text-decoration: none;
+}
+
+.subscribe-button {
+  background-color: #fff;
+  color: #f72210;
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 5px;
 }
 
 .header-middle {
   border: 1px white solid;  
-  min-width: 425px;  
   left: 50%;
+  min-width: 425px;
   padding-top: 10px;
   position: absolute;
   right: 50%;
   top: 0;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   z-index: 3;
 }
-
