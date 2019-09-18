@@ -97,7 +97,7 @@ figure {
   position: relative;
 }
 
-.container-fluid, 
+.container-fluid,
 .container {
   max-width: 1310px;
   margin-right: auto;
@@ -106,7 +106,7 @@ figure {
 
 .main-header {
   background-color: rgb(247, 34, 16);
-  height: 151px;
+  height: 95px;
 }
 
 .header-top {
@@ -150,6 +150,10 @@ figure {
   padding: 5px;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .header-middle {
   border: 1px white solid;  
   left: 50%;
@@ -160,4 +164,61 @@ figure {
   top: 0;
   transform: translate(-50%, 0);
   z-index: 3;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  color: #000;
+  height: 56px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.navbar::before {
+  background-color: #f72210;
+  border-left: 12px solid #fff;
+  border-top: 13px solid #f72210;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 66px;
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.page-nav li {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.page-nav li:nth-child(n+2) {
+  border-left: 1px solid #d9d9d9;
+}
+
+.page-nav > li > a {
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 19px;
+  font-weight: bolder;
+  line-height: 24px;
+  /* list-style: none; */
+  padding: 0 20px 0 10px;
+}
+
+.page-nav > li > a:hover {
+  color: #f72210;
+}
+
+#search {
+	color: #0000008c;
+	cursor: text;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
 }
