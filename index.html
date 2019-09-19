@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- #region Head -->
     <head>
         <!-- Mandatory meta tags -->
         <meta charset="utf-8">
@@ -7,28 +8,55 @@
         <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <!-- Custom CSS  -->
         <link rel="stylesheet" href="./css/style.css" type="text/css">
         <title>Newsweek Clone - News, Analysis, Politics, Business, Technology</title>
     </head>
+    <!-- #endregion -->
     <body>
-        <header class="page-header">
-            <div class="container main-header">
-                <div class="header-top flex-xs row">
+        <header>
+            <div class="main-header fixed-top">
+                <div class="header-top">
                     <div class="col-lg-6 date">
                         <date>Mon, Sep 16, 2019</date>
                     </div>
                     <div class="col-lg-6 subscribe">
-                        <div class="sign-in">SIGN IN</div>
-                        <button class="button" type="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
-                        
-                    </div>
+                        <div class="sign-in"><a href="#">SIGN IN</a></div>
+                        <button class="subscribe-button" type="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
+                    </div>                    
                 </div>
-                <div class="col-lg-4 header-middle">
+                <div class="col-lg-4 header-middle fixed-top">
                     <img src="images/newsweek-logo.png">
-                </div>                
-            </div>
+                </div>
+                <div class="mobile-nav">
+                    <div class="col-lg-6 mobile-header">
+                        <img src="images/newsweek-logo.png">
+                    </div>
+                    <div class="col-lg-6 mobile-subscribe">
+                        <div class="mobile-sign-in"><a href="#">SIGN IN</a></div>
+                        <button class="mobile-subscribe-button" type="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
+                        <span class="burger">
+                            <i class="fas fa-bars fa-lg"></i>
+                        </span>
+                    </div>                    
+                </div>
+                <nav class="navbar container fixed-top">
+                    <ul class="page-nav">
+                        <li class="US"><a>U.S</a></li>
+                        <li><a>World</a></li>
+                        <li><a>Business</a></li>
+                        <li><a>Tech & Science</a></li>
+                        <li><a>Culture</a></li>
+                        <li><a>Newsgeek</a></li>
+                        <li><a>Sports</a></li>
+                        <li><a>Health</a></li>
+                        <li><a>Opinion</a></li>
+                        <li><a>Vantage</a></li>
+                        <li><a id="search">Search <i class="fas fa-search"></i></a></li>
+                    </ul>
+                </nav>                
+            </div>            
         </header>
         <main></main>
         <footer></footer>
@@ -38,3 +66,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>    
 </html>
+
+<!-- --breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px; - 974
+--breakpoint-xl: 1200px; -->
