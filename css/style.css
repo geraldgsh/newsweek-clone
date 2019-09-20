@@ -56,8 +56,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   min-width: 320px;
-  overflow-x: hidden;
-  height: 7020px
+  overflow: hidden;
+  height: 7020px;
 }
 
 /* #region Header */
@@ -188,6 +188,7 @@ header {
   flex-direction: row;
   font-size: 0;
   justify-content: center;
+  padding-top: 22px;
   width: 98%;
 }
 
@@ -227,7 +228,34 @@ header {
 }
 /* #endregion */
 
-@media screen and (max-width: 992px) {
+.main-section {
+  background-color: blue;
+  height: 500px;
+}
+
+.trending {
+  padding-top: 151px;
+}
+
+.first {
+  background-color: #d9d9d9;
+  border: 1px red solid;
+  height: 300px;
+}
+
+.second {
+  background-color: #666;
+  border: 1px red solid;
+  height: 300px;
+}
+
+.third {
+  background-color: #333;
+  border: 1px red solid;
+  height: 300px;
+}
+
+@media screen and (max-width: 1009px) {
   .header-top,
   .header-middle,
   .sign-in,
@@ -251,15 +279,15 @@ header {
     left: 50%;
     padding-top: 10px;
     position: absolute;
-    transform: translate(-50%, 0);
+    transform: translate(-51%, 0);
     z-index: 3;
   }
 
   .mobile-header > img {
-    width: 132px;
     height: 20px;
     left: 100px;
     top: 10px;
+    width: 132px;
   }
 
   .mobile-subscribe {
@@ -267,6 +295,7 @@ header {
     border: 1px black solid;
     display: flex;
     justify-content: flex-end;
+    padding-right: 5px;
   }
 
   .mobile-subscribe-button {
@@ -303,6 +332,10 @@ header {
   .fa-bars:hover {
     cursor: pointer;
   }
+
+  .trending {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 463px) {
@@ -314,7 +347,7 @@ header {
 
   .mobile-sign-in > a {
     font-size: 14px;
-    padding: 6px 3px;
+    padding: 6px 3px 0 0;
   }
 
   .mobile-subscribe-button {

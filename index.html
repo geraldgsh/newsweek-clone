@@ -15,8 +15,9 @@
     </head>
     <!-- #endregion -->
     <body>
+        <!-- #region Header -->
         <header>
-            <div class="main-header fixed-top">
+            <div class="main-header fixed-top navbar-expand-lg">
                 <div class="header-top">
                     <div class="col-lg-6 date">
                         <date>Mon, Sep 16, 2019</date>
@@ -30,10 +31,10 @@
                     <img src="images/newsweek-logo.png">
                 </div>
                 <div class="mobile-nav">
-                    <div class="col-lg-6 mobile-header">
+                    <div class="col-xl-6 mobile-header">
                         <img src="images/newsweek-logo.png">
                     </div>
-                    <div class="col-lg-6 mobile-subscribe">
+                    <div class="col-xl-6 mobile-subscribe">
                         <div class="mobile-sign-in"><a href="#">SIGN IN</a></div>
                         <button class="mobile-subscribe-button" type="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
                         <span class="burger">
@@ -58,7 +59,16 @@
                 </nav>                
             </div>            
         </header>
-        <main></main>
+        <!-- #endregion -->
+        <main class="main-section container-fluid">
+            <div class="trending">
+                <div class="row">
+                    <div class="first col-md-4 col-lg order-2 order-md-1"></div>
+                    <div class="second col-md-8 col-lg-5 order-1 order-md-2"></div>
+                    <div class="third col-md-12 col-lg order-3 order-md-2"></div>
+                </div>
+            </div>
+        </main>
         <footer></footer>
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -72,3 +82,9 @@
 --breakpoint-md: 768px;
 --breakpoint-lg: 992px; - 974
 --breakpoint-xl: 1200px; -->
+
+<!-- Extra small <576px .col-xs
+Small ≥576px .col-sm
+Medium ≥768px .col-md
+Large ≥992px .col-lg
+Extra large ≥1200px .col-xl -->
