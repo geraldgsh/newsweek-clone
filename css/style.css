@@ -56,7 +56,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   min-width: 320px;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 7020px;
 }
 
@@ -230,17 +230,74 @@ header {
 
 .main-section {
   background-color: blue;
-  height: 500px;
+  height: 2000px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .trending {
-  padding-top: 151px;
+  padding-top: 171px;
+}
+
+.title-block {
+  color: #666;
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  padding-bottom: 11px;
+}
+
+.img-wrap {
+  position: relative;
+  min-height: 33px;
+}
+
+.img-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  color: #f72210;
+  display: block;
+  font: bold 17px/16px "Roboto", sans-serif;
+  left: 0;
+  padding: 8px 15px 9px;
+  position: absolute;
+  z-index: 1;
+}
+
+.article-info {
+  padding: 20px 0;
+}
+
+.article-content {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 10px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+h3:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.summary {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 0px 10px;
 }
 
 .first {
   background-color: #d9d9d9;
   border: 1px red solid;
-  height: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 2365px;
+  position: static;
+  left: 0;
+  top: 0;
+  width: auto;
 }
 
 .second {
@@ -250,7 +307,7 @@ header {
 }
 
 .third {
-  background-color: #333;
+  background-color: lightcyan;
   border: 1px red solid;
   height: 300px;
 }
@@ -266,7 +323,7 @@ header {
   }
 
   .main-header {
-    height: 50px;
+    height: 70px;
   }
 
   .mobile-nav {
@@ -279,7 +336,7 @@ header {
     left: 50%;
     padding-top: 10px;
     position: absolute;
-    transform: translate(-51%, 0);
+    transform: translate(-54%, 0);
     z-index: 3;
   }
 
@@ -346,7 +403,7 @@ header {
   }
 
   .mobile-sign-in > a {
-    font-size: 14px;
+    font-size: 12px;
     padding: 6px 3px 0 0;
   }
 
