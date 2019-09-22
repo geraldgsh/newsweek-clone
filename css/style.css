@@ -229,7 +229,7 @@ header {
 /* #endregion */
 
 .main-section {
-  background-color: blue;
+  border: 1px blue solid;
   height: 2000px;
   padding-left: 30px;
   padding-right: 30px;
@@ -266,6 +266,10 @@ header {
   padding: 20px 0;
 }
 
+.article-info > a > h3 {
+  font: bold 22px/24px "Roboto Condensed", sans-serif;
+}
+
 .article-content {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
@@ -286,14 +290,74 @@ h3:hover {
 .summary {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 0px 10px;
+  padding: 0 0 10px;
+}
+
+.well {
+  background-color: rgb(244, 245, 247);
+}
+
+.culture > a > h3 {
+  font: 20px/22px "Lora", serif;
+}
+
+.media {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.media-body {
+  max-height: 120%;
+  min-height: 67px;
+}
+
+.media-body > a > h5 {
+  color: black;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+}
+
+.media-body > a:hover {
+  text-decoration: none;
+}
+
+.media-body > a > h5:hover {
+  color: #f72210;
+}
+
+.byline {
+  color: #555;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  line-height: 21px;
+}
+
+.thumbnail {
+  height: 90px;
+  padding-bottom: 10px;
+  width: 135px;
+}
+
+.top-feature {
+  border-top: 1px solid #ddd;
+}
+
+.top-feature > a > h3 {
+  font: bold 16px/20px "Roboto Condensed", sans-serif;
+}
+
+.top-feature > a:hover {
+  text-decoration: none;
+}
+
+.top-feature > a > h3:hover {
+  color: #f72210;
+  text-decoration: none;
 }
 
 .first {
   background-color: #d9d9d9;
   border: 1px red solid;
   font-family: Arial, Helvetica, sans-serif;
-  height: 2365px;
+  height: 100%;
   position: static;
   left: 0;
   top: 0;
@@ -301,15 +365,16 @@ h3:hover {
 }
 
 .second {
-  background-color: #666;
+  background-color: white;
   border: 1px red solid;
-  height: 300px;
+  height: 100%;
+  max-height: 1500px;
 }
 
 .third {
-  background-color: lightcyan;
+  background-color: white;
   border: 1px red solid;
-  height: 300px;
+  height: 100%;
 }
 
 @media screen and (max-width: 1009px) {
