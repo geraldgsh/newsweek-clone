@@ -5,6 +5,9 @@
         <!-- Mandatory meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
         <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" type="text/css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,8 +18,9 @@
     </head>
     <!-- #endregion -->
     <body>
+        <!-- #region Header -->
         <header>
-            <div class="main-header fixed-top">
+            <div class="main-header fixed-top navbar-expand-lg">
                 <div class="header-top">
                     <div class="col-lg-6 date">
                         <date>Mon, Sep 16, 2019</date>
@@ -30,10 +34,10 @@
                     <img src="images/newsweek-logo.png">
                 </div>
                 <div class="mobile-nav">
-                    <div class="col-lg-6 mobile-header">
+                    <div class="col-xl-6 mobile-header">
                         <img src="images/newsweek-logo.png">
                     </div>
-                    <div class="col-lg-6 mobile-subscribe">
+                    <div class="col-xl-6 mobile-subscribe">
                         <div class="mobile-sign-in"><a href="#">SIGN IN</a></div>
                         <button class="mobile-subscribe-button" type="button">SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
                         <span class="burger">
@@ -58,12 +62,424 @@
                 </nav>                
             </div>            
         </header>
-        <main></main>
+        <!-- #endregion -->
+        <main class="main-section container-fluid">
+            <div class="trending">
+                <div class="row">
+                    <!-- #region First -->
+                    <div class="first col-md-5 col-lg order-2 order-md-1">
+                        <div class="featured">
+                            <h2 class="title-block">FEATURED STORIES</h2>
+                        </div>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/analysis.jpg" class="img-fluid" alt="Pentagon"><span class="img-text">Analysis</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Pentagon's Silence on Afghanistan Slammed: The 'Zero O'Clock Follies'</h3></a>
+                                <div class="summary">The peace talks are collapsing and the violence still claims U.S. service members' lives, but it's been over a year since the Pentagon held a press briefing on America's longest war.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/news1.jpg" class="img-fluid" alt="Budget"><span class="img-text">News</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Russia Says U.S. Could Cut Military Budget If It Stopped Attacking Nations</h3></a>
+                                <div class="summary">Sergey Shoigu said Russia will focus on weapons to level the playing field against overwhelming U.S. force.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/clean-water.jpg" class="img-fluid" alt="clean-water"><span class="img-text">Health</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Repeal of Clean Water Act Raises Contamination Fears</h3></a>
+                                <div class="summary">Researchers found that toxins in U.S. waterways could equate to four cases of cancer in a lifetime for every 100,000 U.S. citizens. However, some experts question these claims.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/democratic-race.jpg" class="img-fluid" alt="democratic-race"><span class="img-text">U.S</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>New York City Mayor Bill de Blasio Drops Out of Presidetial Race</h3></a>
+                                <div class="summary">At its peak, the 2020 Democratic primary field had 26 candidates in the running for the party's nomination.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/james-cameron.jpg" class="img-fluid" alt="james-cameron"><span class="img-text">Tech & Science</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>James Cameron: Our So-Called Civilization Is Using the Ocean as Its Toilet</h3></a>
+                                <div class="summary">The director said deep sea research is "shamefully underfunded" and called for a "global fleet of swarm robotics" to study Earth's oceans.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/online-shops.png" class="img-fluid" alt="online-shops"><span class="img-text">Survey</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Best Online Shops 2020</h3></a>
+                                <div class="summary">Where should customers go for the best products, prices and service? We ranked the top 1,000 shops across eight industries and 39 categories.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/dude.jpg" class="img-fluid" alt="Bachelor"><span class="img-text">SPONSORED INSIGHT</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Why You Should Be An Engineer & Why ABET Is Important to that Path.</h3></a>
+                                <div class="summary">Do you dream of changing the world? Do you want to make a practical difference in people’s lives? Engineers do both these things. Find out how to join them.</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/watch.jpg" class="img-fluid" alt="infertility"><span class="img-text">SPONSORED INSIGHT</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>Infertility - A look at the leading clinics in the field</h3></a>
+                                <div class="summary">There can be family related, culturally linked, and even political reasons why prospective parents face significant challenges seeking conception treatment. Who can they turn to?</div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img-wrap">
+                                <a><img src="images/insight.jpg" class="img-fluid" alt="education"><span class="img-text">SPONSORED INSIGHT</span></a>
+                            </div>
+                            <div class="article-info">
+                                <a href="#"><h3>GLOBAL EDUCATION 2019</h3></a>
+                                <div class="summary">‘One size fits all’ teaching is a thing of the past. The nurturing of critical thinking is paramount in today’s global student. Where are the leaders of tomorrow studying?</div>
+                            </div>
+                        </article>                            
+                    </div>
+                    <!-- #endregion -->
+                    <!-- #region Second -->
+                    <div class="second col-md-7 col-lg-5 order-1 order-md-2">
+                        
+                        <div class="top-story order-lg-1 order-md-1">
+                            <div class="featured">
+                                <h2 class="title-block">TOP STORY</h2>
+                            </div>
+                            <article>
+                                <div class="img-wrap">
+                                    <a><img src="images/iranian-president-hasan-rouhani.jpg" class="img-fluid" alt="iran"><span class="img-text">WORLD</span></a>
+                                </div>
+                                <div class="article-info">
+                                    <a href="#"><h3>Iran's President Demands US, West Leave Persian Gulf</h3></a>
+                                    <div class="summary">Speaker of the Parliament of Iran Ali Larijani also labeled a U.S.-led coalition currently stationed to protect commercial interests in the area "a new means for plundering the region."</div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="top-feature pt-3 pb-2">
+                                    <a href="#"><h3>Russia Mocks U.S. For 'Fantastic' Missiles That Failed to Stop Saudi Attack</h3></a>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="top-feature pt-3 pb-2">
+                                    <a href="#"><h3>U.S. Defense, State Departments Split Over Blaming Iran Amid Talks of 'War'</h3></a>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="top-feature pt-3 pb-2">
+                                    <a href="#"><h3>Saudi King Vows Action After Attacks, as Iran Warns of Regional Retaliation</h3></a>
+                                </div>
+                            </article>
+                        </div>    
+                        <div class="culture-travel order-lg-2 order-md-last">
+                            <div class="featured">
+                                <h2 class="title-block pt-2 pb-2">Culture & Travel</h2>
+                            </div>
+                            <div class="row">
+                                <article class="col-md-6">
+                                    <div class="img-wrap">
+                                        <a><img src="images/nobody-told-me culture-1.jpg" class="img-fluid" alt="Bar"></a>
+                                    </div>
+                                    <div class="culture">
+                                        <a href="#"><h3 class="mt-3">9 Best Cocktail Bars in New York</h3></a>
+                                        <div class="culture-summary mb-3">The Big Apple cocktail scene has never been less pretentious—and more expansive—than it is right now.</div>
+                                        <a href="#" class="btn mb-3">Cocktails</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6">
+                                    <div class="img-wrap">
+                                        <a><img src="images/nobody-told-me culture-2.jpg" class="img-fluid" alt="Cool"></a>
+                                    </div>
+                                    <div class="culture">
+                                        <a href="#"><h3 class="mt-3">Hadestown's André De Shields Talks Diversity on Broadway</h3></a>
+                                        <div class="culture-summary mb-3">"There is no one like you. There has never been anyone like you. There shall never be anyone like you. Therefore, know thyself; be thyself."</div>
+                                        <a href="#" class="btn mb-3">Broadway</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6">
+                                    <div class="img-wrap">
+                                        <a><img src="images/downton-abbey culture-3.png" class="img-fluid" alt="Abbey"></a>
+                                    </div>
+                                    <div class="culture">
+                                        <a href="#"><h3 class="mt-3">Real-life Downton Abbey Available on Airbnb For Under $190 a Night</h3></a>
+                                        <div class="culture-summary mb-3">"Lord and Lady Carnarvon will welcome guests into their home on arrival, and after settling them into their bedroom, will ask the guests to join them for cocktails before dinner."</div>
+                                        <a href="#" class="btn mb-3">Downtown Abbey</a>
+                                    </div>
+                                </article>
+                                <article class="col-md-6">
+                                    <div class="img-wrap">
+                                        <a><img src="images/produce-farmers-market culture-4.jpg" class="img-fluid" alt="Market"></a>
+                                    </div>
+                                    <div class="culture">
+                                        <a href="#"><h3 class="mt-3">How to Succeed at a French Farmers' Market</h3></a>
+                                        <div class="culture-summary mb-3">Follow these tips from "Cook Like a Local in France" to win at the market every time.</div>
+                                        <a href="#" class="btn mb-3">France</a>
+                                    </div>
+                                </article>
+                            </div>                            
+                        </div>                        
+                        
+                        <div class="more-stories order-lg-3 order-md-2">
+                            <div class="featured">
+                                <h2 class="title-block pt-3">MORE STORIES</h2>
+                            </div>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images more-images align-self-start mr-3" src="images/stories-1.png" alt="Future">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">Millions of Young People March for Action on Climate Change in Worldwide Protest</h5></a>
+                                        <div class="summary">"New York City stands with our young people. They're our conscience," tweeted Mayor Bill de Blasio.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-2.png" alt="Canada">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">Who Is Andrew Scheer? Conservative Could Replace Trudeau as Canada's Prime Minister</h5></a>
+                                        <div class="summary">The Canadian Conservative Party leader says Prime Minister Justin Trudeau "has lost the moral authority to govern," but his political career has not been entirely scandal-free either.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-3.png" alt="Missle">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">Russia Mocks U.S. for 'Fantastic' Missiles That Failed to Stop Saudi Attack</h5></a>
+                                        <div class="summary">Russian Foreign Ministry spokeswoman Maria Zakharova also suggested the U.S. strategy in the Middle East is collapsing.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-4.png" alt="Hurricane">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">Future Hurricane Could Loop Around and Make Landfall Twice in the U.S.</h5></a>
+                                        <div class="summary">Scientists simulated a hypothetical but physically plausible storm dubbed "Hurricane Rhody" that makes landfall twice in an area that FEMA has called the "Achilles' heel of the Northeast."</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-5.png" alt="Democrats">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">House Democrats Pass Bill to Restore Employee Rights Gutted by Supreme Court</h5></a>
+                                        <div class="summary">More than half of private-sector workers who don't belong to a union are subject to some sort of mandatory arbitration provision, according to the Economic Policy Institute.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-6.png" alt="Bolton">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">Bolton a 'Troublemaker,' Trump 'Wise' to Remove Him: North Korean Official</h5></a>
+                                        <div class="summary">Kim Myong Gil said Friday he welcomed President Donald Trump's suggestion that a "new method" could achieve success in talks between Washington and Pyongyang.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-7.png" alt="Gabby">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">'Vote Them Out': Gabby Giffords Headlines Gun Control Rally Outside NRA Headquarters</h5></a>
+                                        <div class="summary">Giffords and former Virginia Governor Terry McAuliffe attended the event to promote Democratic candidates running on a platform of gun safety in the state's upcoming elections</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="more-story clearfix pt-3 pb-2">
+                                    <img class="more-images align-self-start mr-3" src="images/stories-8.png" alt="Airline">
+                                    <div class="brief">
+                                        <a href="#"><h5 class="mt-0 mb-1">American Airlines Accused of Racial Profiling After Muslim Man Quizzed</h5></a>
+                                        <div class="summary">Abderraoof Alkhawaldeh and Issam Abdallah were waiting for take-off on the flight bound for Dallas when passengers were disembarked.</div>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                        </div>
+                    </div>                    
+                    <!-- #endregion -->
+                    <!-- #region third -->
+                    <div class="third col-md-12 col-lg order-3 order-md-2">
+                        <div class="featured">
+                            <div class="title-block">OPINION</div>
+                        
+                            <article>                            
+                                <div class="media pb-0" style="border-top: 0;">
+                                    <img class="align-self-start mr-3" src="images/charlie-kirk-1.png" alt="Charles Kirk">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">Meet Elizabeth Warren, Philosopher Queen</h5></a>
+                                        <p class="byline mb-2">By Charlie Kirk</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>                        
+                                <div class="media pb-0">
+                                    <img class="align-self-start mr-3" src="images/david-l-roll-2.png" alt="David L. Roll">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">Does Jim Mattis Have a Duty to Criticize Donald Trump?</h5></a>
+                                        <p class="byline mb-2">By David L. Roll</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="media pb-0">
+                                    <img class="align-self-start mr-3" src="images/nw-columnist-newt-gingrich-3.png" alt="William T. Dickens and Robert K. Triest">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">This Money Market Madness Looks Like a Bad Sign for the Economy. It Isn't</h5></a>
+                                        <p class="byline mb-2">By William T. Dickens and Robert K. Triest</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="media pb-0">
+                                    <img class="align-self-start mr-3" src="images/nyiesha-mallet-asli-mwaafrika-4.png" alt="Nyiesha & Asli">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">Want to Fight Climate Change? Listen to Young People of Color</h5></a>
+                                        <p class="byline mb-2">By Nyiesha Mallet and Asli Mwaafrika</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="media pb-0">
+                                    <img class="align-self-start mr-3" src="images/anthony-harwood-5.png" alt="Anthony Harwooda">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">America Looks Away From the Suffering in Yemen—Until Oil Is at Stake</h5></a>
+                                        <p class="byline mb-2">By Anthony Harwooda</p>
+                                    </div>
+                                </div>
+                            <article>
+                            <article>
+                                <div class="media pb-0">
+                                    <img class="align-self-start mr-3" src="images/barber-theoharis-6.png" alt="Liz Theoharis">
+                                    <div class="media-body">
+                                        <a href="#"><h5 class="mt-0 mb-1">By Striking for the Climate, We're Striking Against Poverty and Racism Too</h5></a>
+                                        <p class="byline mb-2">By William Barber and Liz Theoharis</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="latest-news mt-5">
+                                <div class="title-block">LATEST NEWS</div>
+                            
+                                <article>
+                                    <div class="latest-piece clearfix pb-0" style="border-top: 0;">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/hire-driver-uber-news-1.jpg" alt="Uber">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">California's New Labor Law Could Hurt the Gig Workers It's Meant to Help</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/imprisoned-jehovahs-witnesses-russia news-2.jpg" alt="Russia">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">Six Jehovah's Witnesses Jailed in Russia for 'Extremism'</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/sylvester-stallone-rambo-last-blood news-3.jpg" alt="Russia">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">Rambo Creator 'Hates' 'Last Blood,' Left Theater Feeling 'Degraded'</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0 last">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/berger-20sep19 news-4.jpg" alt="Berger">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">Marine Commandant Angry With Unit that Booked Gala At Trump's Mar-a-Lago</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/candace-owens-white-supremacy-congressional-hearing news-5.jpg" alt="Indiana">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">Indiana Community Forces Police to Remove 'All Lives Matter' from Vehicles</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/alexandria-ocasio-cortez-news7.jpg" alt="Candance">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">Candace Owens Says Black on Black Crime, Lack of Masculinity Biggest Issues</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="latest-piece clearfix pb-0">
+                                        <img class="latest-img align-self-start mr-3 img-fluid" src="images/gay-bashing-australia news-6.jpg" alt="Gay Bashing">
+                                        <div class="brief">
+                                            <a href="#"><h5 class="mt-0 mb-1">21-Year-Old Recounts Alleged Gay-Bashing by Gang of Teens</h5></a>                                
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="featured mt-5">
+                            <article id="sponsored-article">
+                                <div class="img-wrap">
+                                    <a><img src="images/nwtolkien_300x250.jpg" class="img-fluid" alt="Tolkien"><span class="img-text">SPECIAL EDITION</span></a>
+                                </div>
+                                <div class="article-info">
+                                    <a href="#"><h3>J.R.R. Tolkien: Inside the Mastermind of Middle-Earth</h3></a>
+                                <div class="summary">
+                                    Nearly a century ago, J.R.R. Tolkien introduced readers to the world of Middle-Earth, capturing the hearts and minds of generations to come. Explore the man behind The Hobbit and The Lord of the Rings in this new Special Edition: J.R.R Tolkien!
+                                </div>
+                            </article>
+                        </div>
+                        <div class="featured mt-3">
+                            <article id="sponsored-article">
+                                <div class="img-wrap">
+                                    <a><img src="images/sponsored-2.jpg" class="img-fluid" alt="Homes"><span class="img-text">SPONSORED</span></a>
+                                </div>
+                                <div class="article-info">
+                                    <a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur omnis iure enim corporis ab, commodi?</h3></a>
+                                <div class="summary">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ullam recusandae excepturi laborum aspernatur consectetur quos voluptatum, quibusdam dignissimos! Officia quasi alias in optio sunt molestiae veniam ipsa eaque porro.
+                                </div>
+                            </article>
+                            <div class="featured mt-3">
+                                <article id="sponsored-article">
+                                    <div class="img-wrap">
+                                        <a><img src="images/sponsored-1.jpg" class="img-fluid" alt="Homes"><span class="img-text">SPONSORED</span></a>
+                                    </div>
+                                    <div class="article-info">
+                                        <a href="#"><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur omnis iure enim corporis ab, commodi?</h3></a>
+                                    <div class="summary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ullam recusandae excepturi laborum aspernatur consectetur quos voluptatum, quibusdam dignissimos! Officia quasi alias in optio sunt molestiae veniam ipsa eaque porro.
+                                    </div>
+                                </article>
+                        </div>
+                    </div>
+                    <!-- #endregion -->
+                </div>
+            </div>
+        </main>
         <footer></footer>
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- <script src="js/script.js"></script> -->
     </body>    
 </html>
 
@@ -72,3 +488,9 @@
 --breakpoint-md: 768px;
 --breakpoint-lg: 992px; - 974
 --breakpoint-xl: 1200px; -->
+
+<!-- Extra small <576px .col-xs
+Small ≥576px .col-sm
+Medium ≥768px .col-md
+Large ≥992px .col-lg
+Extra large ≥1200px .col-xl -->

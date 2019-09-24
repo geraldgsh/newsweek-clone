@@ -1,4 +1,4 @@
-::placeholder {
+/* ::placeholder {
   color: #666;
 }
 
@@ -7,7 +7,7 @@
   border: 0 none;
   list-style: none outside none;
   outline: 0 none;
-}
+} */
 
 /* html,
 body,
@@ -38,7 +38,7 @@ figure {
   padding: 0;
 } */
 
-body::before {
+/* body::before {
   content: "";
   display: block;
   height: 1px;
@@ -57,15 +57,15 @@ body {
   line-height: 20px;
   min-width: 320px;
   overflow-x: hidden;
-  height: 7020px
-}
+  /* height: 7020px; */
+} */
 
 /* #region Header */
 header {
   position: relative;
 }
 
-.image a,
+/* .image a,
 .header,
 .footer,
 .nav,
@@ -93,7 +93,7 @@ header {
 .row::after {
   content: " ";
   display: table;
-}
+} */
 
 .container-fluid,
 .container {
@@ -188,6 +188,7 @@ header {
   flex-direction: row;
   font-size: 0;
   justify-content: center;
+  padding-top: 22px;
   width: 98%;
 }
 
@@ -227,7 +228,209 @@ header {
 }
 /* #endregion */
 
-@media screen and (max-width: 992px) {
+.main-section {
+  border: 1px blue solid;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.trending {
+  padding-top: 171px;
+}
+
+.title-block {
+  color: #666;
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  padding-bottom: 11px;
+}
+
+.img-wrap {
+  position: relative;
+  min-height: 33px;
+}
+
+.img-wrap > a > img {
+  width: 100%;
+  min-width: 179px;
+}
+
+.img-text {
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  color: #f72210;
+  display: block;
+  font: bold 17px/16px "Roboto", sans-serif;
+  left: 0;
+  padding: 8px 15px 9px;
+  position: absolute;
+  z-index: 1;
+}
+
+.article-info {
+  padding: 16px 0;
+}
+
+.article-info > a {
+  text-decoration: none;
+}
+
+.article-info > a > h3 {
+  font: bold 22px/24px "Roboto Condensed", sans-serif;
+}
+
+.article-info > a > h3:hover {
+  text-decoration: underline red;
+}
+
+.article-content {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 10px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+h3:hover {
+  text-decoration-color: red;
+}
+
+.summary {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 10px;
+}
+
+.culture-travel {
+  background-color: rgb(244, 245, 247);
+}
+
+.culture > a > h3 {
+  font: 20px/22px "Lora", serif;
+}
+
+.culture-summary {
+  color: rgba(39, 39, 39, 0.5);
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+.btn {
+  background-color: #c2d4d7;
+  font: 13px Arial, Helvetica, sans-serif;
+  left: 0;
+  padding: 0 6px;
+  margin: 0 9px 6px 0 0;
+}
+
+.more-stories {
+  padding: 14px 0 10px 0;
+}
+
+.latest-piece,
+.more-story {
+  padding: 10px 0 5px 0;
+  border-top: 1px solid #ddd;
+}
+
+.latest-img,
+.more-images {
+  clear: right;
+  float: left;
+  margin-right: 15px;
+  max-width: 135px;
+}
+
+.brief a > h5 {
+  color: black;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+}
+
+.brief > a:hover {
+  text-decoration: none;
+}
+
+.brief > a > h5:hover {
+  color: #f72210;
+}
+
+.media {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.media-body {
+  max-height: 120%;
+  min-height: 67px;
+}
+
+.media-body > a > h5 {
+  color: black;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+}
+
+.media-body > a:hover {
+  text-decoration: none;
+}
+
+.media-body > a > h5:hover {
+  color: #f72210;
+}
+
+.byline {
+  color: #555;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  line-height: 21px;
+}
+
+.top-feature {
+  border-top: 1px solid #ddd;
+}
+
+.top-feature > a > h3 {
+  font: bold 19px/23px "Roboto Condensed", sans-serif;
+}
+
+.top-feature > a:hover {
+  text-decoration: none;
+}
+
+.top-feature > a > h3:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.first {
+  background-color: #d9d9d9;
+  border: 1px red solid;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.second {
+  background-color: white;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  top: 0;
+  position: sticky;
+}
+
+.third {
+  background-color: white;
+  border: 1px red solid;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: sticky;
+}
+
+@media screen and (max-width: 1009px) {
   .header-top,
   .header-middle,
   .sign-in,
@@ -238,7 +441,7 @@ header {
   }
 
   .main-header {
-    height: 50px;
+    height: 70px;
   }
 
   .mobile-nav {
@@ -251,15 +454,15 @@ header {
     left: 50%;
     padding-top: 10px;
     position: absolute;
-    transform: translate(-50%, 0);
+    transform: translate(-51%, 0);
     z-index: 3;
   }
 
   .mobile-header > img {
-    width: 132px;
     height: 20px;
     left: 100px;
     top: 10px;
+    width: 132px;
   }
 
   .mobile-subscribe {
@@ -267,6 +470,7 @@ header {
     border: 1px black solid;
     display: flex;
     justify-content: flex-end;
+    padding-right: 5px;
   }
 
   .mobile-subscribe-button {
@@ -303,18 +507,74 @@ header {
   .fa-bars:hover {
     cursor: pointer;
   }
+
+  .trending {
+    padding-top: 50px;
+  }
 }
 
-@media screen and (max-width: 463px) {
+@media screen and (max-width: 991px) {
+  .first {
+    position: relative;
+    top: 0;
+  }
+
+  .second {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .top-story {
+    position: sticky;
+    top: 0;
+  }
+
+  .more-stories {
+    position: sticky;
+    top: 0;
+  }
+
+  .culture-travel {
+    position: sticky;
+    top: 0;
+  }
+
+  .third {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .first {
+    background-color: #f72210;
+    position: fixed;
+    position: sticky;
+    top: 0;
+  } */
+
+  .latest-img,
+  .more-images {
+    max-width: 258px;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .latest-img,
+  .more-images {
+    max-width: 135px;
+  }
+
   .mobile-header > img {
     width: 115px;
     height: 18px;
     top: 10px;
+    transform: translate(-4%, 0);
   }
 
   .mobile-sign-in > a {
-    font-size: 14px;
-    padding: 6px 3px;
+    font-size: 12px;
+    padding: 6px 3px 0 0;
   }
 
   .mobile-subscribe-button {
