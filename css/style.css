@@ -308,8 +308,16 @@ h3:hover {
   background-color: rgb(244, 245, 247);
 }
 
+.culture > a {
+  text-decoration: none;
+}
+
 .culture > a > h3 {
   font: 20px/22px "Lora", serif;
+}
+
+.culture > a > h3:hover {
+  text-decoration: underline red;
 }
 
 .culture-summary {
@@ -448,11 +456,6 @@ h3:hover {
   width: 8px;
 }
 
-.voters {
-  bottom: 38px;
-  left: 15px;
-}
-
 .nw-logo-small {
   background-color: #f72210;
   background-image: url(../images/logo-n1.svg);
@@ -495,6 +498,26 @@ h3:hover {
 }
 
 .magazine-img3 {
+  background-image: url(../images/mag-3.jpg);
+}
+
+.magazine-img4 {
+  background-image: url(../images/mag-4.jpg);
+}
+
+.magazine-img5 {
+  background-image: url(../images/mag-5.jpg);
+}
+
+.magazine-img6 {
+  background-image: url(../images/mag-6.jpg);
+}
+
+.magazine-img7 {
+  background-image: url(../images/mag-7.jpg);
+}
+
+.magazine-img8 {
   background-image: url(../images/mag-3.jpg);
 }
 
@@ -666,6 +689,10 @@ h3:hover {
   .latest-img,
   .more-images {
     max-width: 258px;
+  }
+
+  .magazine-img {
+    height: 52vw;
   }
 }
 
