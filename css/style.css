@@ -1,4 +1,4 @@
-::placeholder {
+/* ::placeholder {
   color: #666;
 }
 
@@ -7,7 +7,7 @@
   border: 0 none;
   list-style: none outside none;
   outline: 0 none;
-}
+} */
 
 /* html,
 body,
@@ -38,7 +38,7 @@ figure {
   padding: 0;
 } */
 
-body::before {
+/* body::before {
   content: "";
   display: block;
   height: 1px;
@@ -57,15 +57,15 @@ body {
   line-height: 20px;
   min-width: 320px;
   overflow-x: hidden;
-  height: 7020px;
-}
+  /* height: 7020px; */
+} */
 
 /* #region Header */
 header {
   position: relative;
 }
 
-.image a,
+/* .image a,
 .header,
 .footer,
 .nav,
@@ -93,7 +93,7 @@ header {
 .row::after {
   content: " ";
   display: table;
-}
+} */
 
 .container-fluid,
 .container {
@@ -230,7 +230,7 @@ header {
 
 .main-section {
   border: 1px blue solid;
-  height: 2000px;
+  height: 100%;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -268,11 +268,19 @@ header {
 }
 
 .article-info {
-  padding: 20px 0;
+  padding: 16px 0;
+}
+
+.article-info > a {
+  text-decoration: none;
 }
 
 .article-info > a > h3 {
   font: bold 22px/24px "Roboto Condensed", sans-serif;
+}
+
+.article-info > a > h3:hover {
+  text-decoration: underline red;
 }
 
 .article-content {
@@ -288,7 +296,6 @@ h3 {
 }
 
 h3:hover {
-  text-decoration: underline;
   text-decoration-color: red;
 }
 
@@ -399,12 +406,9 @@ h3:hover {
 .first {
   background-color: #d9d9d9;
   border: 1px red solid;
-  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
-  position: static;
   left: 0;
   top: 0;
-  width: auto;
 }
 
 .second {
@@ -413,12 +417,17 @@ h3:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+  top: 0;
+  position: sticky;
 }
 
 .third {
   background-color: white;
   border: 1px red solid;
   height: 100%;
+  left: 0;
+  top: 0;
+  position: sticky;
 }
 
 @media screen and (max-width: 1009px) {
@@ -504,32 +513,58 @@ h3:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .top-stories {
-    order: 1;
+@media screen and (max-width: 991px) {
+  .first {
+    position: relative;
+    top: 0;
   }
 
-  .culture-travel {
-    order: 3;
+  .second {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .top-story {
+    position: sticky;
+    top: 0;
   }
 
   .more-stories {
-    order: 2;
+    position: sticky;
+    top: 0;
   }
+
+  .culture-travel {
+    position: sticky;
+    top: 0;
+  }
+
+  .third {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* .first {
+    background-color: #f72210;
+    position: fixed;
+    position: sticky;
+    top: 0;
+  } */
 
   .latest-img,
   .more-images {
     max-width: 258px;
-}
-
-@media screen and (max-width: 463px) {
-  .latest-img,
-  .more-images {
-    max-width: 135px;
   }
 }
 
 @media screen and (max-width: 464px) {
+  .latest-img,
+  .more-images {
+    max-width: 135px;
+  }
+
   .mobile-header > img {
     width: 115px;
     height: 18px;
