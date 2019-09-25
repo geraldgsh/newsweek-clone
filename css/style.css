@@ -562,6 +562,24 @@ h3:hover {
   line-height: 20px;
 }
 
+.count {
+  color: #e9212e;
+  background: url(../images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  display: block;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 700;
+  left: 0;
+  line-height: 58px;
+  text-indent: 5px;
+  position: absolute;
+  text-align: center;
+  width: 70px;
+  z-index: 1;
+}
+
 @media screen and (max-width: 1009px) {
   .header-top,
   .header-middle,
@@ -652,9 +670,9 @@ h3:hover {
   }
 
   .second {
-    position: relative;
     top: 0;
     bottom: 0;
+    position: relative;
   }
 
   /* .top-story {
