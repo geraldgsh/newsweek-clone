@@ -534,6 +534,10 @@ h3:hover {
   padding-top: 10px;
 }
 
+.mini-feature > div > a {
+  text-decoration: none;
+}
+
 .mini-column {
   border: none;
   padding: 0 0 10px;
@@ -543,6 +547,10 @@ h3:hover {
   color: #000;
   font: bold 17px/21px "Roboto Condensed", sans-serif;
   padding: 0 0 5px 0;
+}
+
+.info:hover {
+  text-decoration: underline red;
 }/* #endregion */
 
 /* #region subscribe newsletter */
