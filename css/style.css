@@ -597,6 +597,7 @@ h3:hover {
 
 .sub-box {
   background-color: rgb(244, 245, 246);
+  width: 95%;
 }
 
 .bottom-sign-up {
@@ -624,8 +625,9 @@ h3:hover {
   bottom: 15px;
   height: 227px;
   position: absolute;
-  right: 0;
-  width: 170px;  
+  right: auto;
+  left: auto;
+  width: 170px;
 }
 
 .bottom-sign-up > div .covers img:first-child {
@@ -652,7 +654,7 @@ h3:hover {
 }
 
 .newsletter {
-  margin: 40px 0 20px 0;
+  margin: 40px 0 0 0;
 }
 
 .newsletter .row {
@@ -817,6 +819,10 @@ footer {
   .third {
     position: relative;
     top: 0;
+  }
+
+  .sub-box {
+    width: 100%;
   }
 }
 
