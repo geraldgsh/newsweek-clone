@@ -9,35 +9,6 @@
   outline: 0 none;
 }
 
-/* html,
-body,
-div,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-ol,
-ul,
-li,
-form,
-legend,
-label,
-table,
-header,
-footer,
-nav,
-section,
-figure {
-  margin: 0;
-  padding: 0;
-} */
-
 body::before {
   content: "";
   display: block;
@@ -63,36 +34,6 @@ body {
 header {
   position: relative;
 }
-
-/* .image a,
-.header,
-.footer,
-.nav,
-.section,
-.article,
-.hgroup,
-.figure {
-  display: block;
-}
-
-.clearfix::after,
-.container::after,
-.container-fluid::after,
-.row::after {
-  clear: both;
-}
-
-.clearfix::before,
-.clearfix::after,
-.container::before,
-.container::after,
-.container-fluid::before,
-.container-fluid::after,
-.row::before,
-.row::after {
-  content: " ";
-  display: table;
-} */
 
 .container-fluid,
 .container {
@@ -225,15 +166,16 @@ header {
   font-size: 16px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
-}
-/* #endregion */
+}/* #endregion */
 
+/* #region main section */
 .main-section {
   height: 100%;
   padding-left: 30px;
   padding-right: 30px;
-}
+}/* #endregion */
 
+/* #region general classes */
 .trending {
   padding-top: 171px;
 }
@@ -302,8 +244,9 @@ h3:hover {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 0 10px;
-}
+}/* #endregion */
 
+/* #region culture and travel */
 .culture-travel {
   background-color: rgb(244, 245, 247);
 }
@@ -331,8 +274,9 @@ h3:hover {
   left: 0;
   padding: 0 6px;
   margin: 0 9px 6px 0 0;
-}
+}/* #endregion */
 
+/* #region more stories */
 .more-stories {
   padding: 14px 0 10px 0;
 }
@@ -362,8 +306,9 @@ h3:hover {
 
 .brief > a > h5:hover {
   color: #f72210;
-}
+}/* #endregion */
 
+/* #region opinion */
 .media {
   border-top: 1px solid #ddd;
   padding-top: 10px;
@@ -385,8 +330,9 @@ h3:hover {
 
 .media-body > a > h5:hover {
   color: #f72210;
-}
+}/* #endregion */
 
+/* #region top story */
 .byline {
   color: #555;
   font: bold 17px/21px "Roboto Condensed", sans-serif;
@@ -408,8 +354,9 @@ h3:hover {
 .top-feature > a > h3:hover {
   color: #f72210;
   text-decoration: none;
-}
+}/* #endregion */
 
+/* #region main columns */
 .first {
   height: 100%;
   top: 0;
@@ -427,8 +374,9 @@ h3:hover {
   height: 100%;
   top: 0;
   position: sticky;
-}
+}/* #endregion */
 
+/* #region magazine */
 .grey {
   background-color: #f4f5f6;
   color: #000;
@@ -551,8 +499,9 @@ h3:hover {
   font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
   line-height: 20px;
-}
+}/* #endregion */
 
+/* #region slideshow */
 .count {
   color: #e9212e;
   background: url(../images/icon-slideshows-nw.png) 0 0/contain no-repeat;
@@ -569,8 +518,9 @@ h3:hover {
   text-align: center;
   width: 70px;
   z-index: 1;
-}
+}/* #endregion */
 
+/* #region groups */
 .group {
   border-top: 1px solid #d9d9d9;
   color: #f72210;
@@ -593,8 +543,9 @@ h3:hover {
   color: #000;
   font: bold 17px/21px "Roboto Condensed", sans-serif;
   padding: 0 0 5px 0;
-}
+}/* #endregion */
 
+/* #region subscribe newsletter */
 .sub-box {
   background-color: rgb(244, 245, 246);
   width: 95%;
@@ -678,8 +629,9 @@ h3:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+}/* #endregion */
 
+/* #region footer */
 footer {
   background-color: #fff;
   padding-top: 30px;
@@ -712,13 +664,47 @@ footer {
   vertical-align: bottom;
 }
 
+.media-icons > i:hover {
+  cursor: pointer;
+}
+
+.menu {
+  color: #666;
+  display: flex;
+  font-size: 14px;
+  line-height: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-list {
+  cursor: pointer;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding-right: 6px;
+}
+
+.item-list:hover {
+  color: #000;
+}
+
+.right-list {
+  text-align: right;
+  padding: 0;
+}
+
+.editions {
+  justify-content: flex-end;
+}/* #endregion */
+
 @media screen and (max-width: 1009px) {
+  .date,
   .header-top,
   .header-middle,
+  .navbar,
   .sign-in,
-  .subscribe-button,
-  .date,
-  .navbar {
+  .subscribe-button {
     display: none;
   }
 
@@ -811,9 +797,8 @@ footer {
   }
 
   .second {
-    top: 0;
-    bottom: 0;
     position: relative;
+    top: 0;
   }
 
   .third {
