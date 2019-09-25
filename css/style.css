@@ -580,6 +580,30 @@ h3:hover {
   z-index: 1;
 }
 
+.group {
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  font-size: 22px;
+  line-height: 22px;
+  padding-top: 25px;
+}
+
+.mini-feature {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 10px;
+}
+
+.mini-column {
+  border: none;
+  padding: 0 0 10px;
+}
+
+.info {
+  color: #000;
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  padding: 0 0 5px 0;
+}
+
 @media screen and (max-width: 1009px) {
   .header-top,
   .header-middle,
@@ -604,20 +628,20 @@ h3:hover {
     left: 50%;
     padding-top: 10px;
     position: absolute;
-    transform: translate(-51%, 0);
+    transform: translate(-165%, 0);
+    width: 30%;
     z-index: 3;
   }
 
   .mobile-header > img {
     height: 20px;
     left: 100px;
-    top: 10px;
+    top: 13px;
     width: 132px;
   }
 
   .mobile-subscribe {
     align-items: center;
-    border: 1px black solid;
     display: flex;
     justify-content: flex-end;
     padding-right: 5px;
@@ -632,9 +656,13 @@ h3:hover {
     color: white;
     font-size: 17px;
     font-weight: bolder;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-decoration: none;
+  }
+
+  .mobile-sign-in > a:hover {
+    cursor: pointer;
   }
 
   .mobile-subscribe-button {
@@ -645,12 +673,17 @@ h3:hover {
     padding: 5px;
   }
 
+  .mobile-subscribe-button:hover {
+    cursor: pointer;
+  }
+
   .fa-bars {
     color: white;
   }
 
   .burger {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 6px;
   }
 
@@ -675,21 +708,6 @@ h3:hover {
     position: relative;
   }
 
-  /* .top-story {
-    position: sticky;
-    top: 0;
-  }
-
-  .more-stories {
-    position: sticky;
-    top: 0;
-  } */
-
-  /* .culture-travel {
-    position: sticky;
-    top: 0;
-  } */
-
   .third {
     position: relative;
     top: 0;
@@ -697,13 +715,6 @@ h3:hover {
 }
 
 @media screen and (max-width: 768px) {
-  /* .first {
-    background-color: #f72210;
-    position: fixed;
-    position: sticky;
-    top: 0;
-  } */
-
   .latest-img,
   .more-images {
     max-width: 258px;
@@ -724,7 +735,7 @@ h3:hover {
     width: 115px;
     height: 18px;
     top: 10px;
-    transform: translate(-4%, 0);
+    transform: translate(1%, 0);
   }
 
   .mobile-sign-in > a {
