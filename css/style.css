@@ -96,6 +96,7 @@ header {
 
 .container-fluid,
 .container {
+  background-color: white;
   max-width: 1310px;
   position: relative;
 }
@@ -414,7 +415,6 @@ h3:hover {
   background-color: #d9d9d9;
   border: 1px red solid;
   height: 100%;
-  left: 0;
   top: 0;
   position: sticky;
 }
@@ -426,14 +426,12 @@ h3:hover {
   flex-direction: column;
   height: 100%;
   top: 0;
-  /* position: sticky; */
 }
 
 .third {
   background-color: white;
   border: 1px red solid;
   height: 100%;
-  left: 0;
   top: 0;
   position: sticky;
 }
@@ -604,6 +602,86 @@ h3:hover {
   padding: 0 0 5px 0;
 }
 
+.sub-box {
+  background-color: rgb(244, 245, 246);
+}
+
+.bottom-sign-up {
+  padding-top: 40px;
+}
+
+.bottom-sign-up > h2 {
+  color: #f72210;
+  font: bold 16px/16px "Roboto Condensed",sans-serif;
+  padding-bottom: 11px;
+}
+
+.bottom-sign-up > div {
+  padding: 30px;
+}
+
+.bottom-sign-up > div .covers {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: auto;
+}
+
+.bottom-sign-up > div .covers img {
+  width: 170px;
+  height: 227px;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+.bottom-sign-up > div .covers img:first-child {
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+}
+
+.text {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.red-btn {
+  background-color: #f72210;
+  color: white;
+  font: bold 18px "Roboto Condensed", sans-serif;
+  text-decoration: none;
+}
+
+.red-btn:hover {
+  background-color: #c61606;
+  color: white;
+}
+
+.newsletter {
+  padding-top: 40px;
+}
+
+.newsletter .row {
+  height: 90%;
+}
+
+.newsletter > h2 {
+  color: #f72210;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  padding-bottom: 11px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/briefing.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media screen and (max-width: 1009px) {
   .header-top,
   .header-middle,
@@ -722,6 +800,18 @@ h3:hover {
 
   .magazine-img {
     height: 52vw;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text > h3 {
+    font-size: 20px;
+  }
+
+  .image {
+    height: 160px;
   }
 }
 
